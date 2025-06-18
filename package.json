@@ -1,12 +1,14 @@
 {
   "name": "feather-router",
-  "private": true,
   "version": "0.0.0",
+  "license": "MIT",
   "type": "module",
   "main": "./dist/feather-router.umd.js",
   "module": "./dist/feather-router.es.js",
   "types": "./dist/index.d.ts",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
@@ -31,7 +33,7 @@
     "vite": "^6.3.5",
     "vite-plugin-dts": "^4.5.4"
   },
-    "peerDependencies": {
+  "peerDependencies": {
     "react": ">=16.8.0",
     "react-dom": ">=16.8.0"
   }
