@@ -1,3 +1,3 @@
-export type FeatherRouter = unknown;
+export type ThinRouter = unknown;
 
 console.log("Hello, world!");

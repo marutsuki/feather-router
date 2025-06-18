@@ -1,3 +1,3 @@
-# FeatherRouter
+# ThinRouter
 
 DO NOT USE THIS RELEASE.
