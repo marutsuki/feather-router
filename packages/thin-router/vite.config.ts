@@ -7,8 +7,8 @@ export default defineConfig({
   plugins: [
     react(),
     dts({
-      insertTypesEntry: true,
-      include: "src",
+      rollupTypes: true,
+      tsconfigPath: "./tsconfig.app.json",
     }),
   ],
   build: {

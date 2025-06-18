@@ -1,25 +1,16 @@
 {
-  "name": "thin-router",
-  "version": "0.0.1",
-  "license": "MIT",
-  "type": "module",
-  "main": "./dist/thin-router.umd.js",
-  "module": "./dist/thin-router.es.js",
-  "types": "./dist/index.d.ts",
-  "files": [
-    "dist",
-    "README.md",
-    "LICENSE.md"
+  "name": "thin-router-workspace",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "examples/*"
   ],
   "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
-  },
-  "dependencies": {
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+    "build:lib": "npm run build --workspace=thin-router",
+    "dev:example": "npm run dev --workspace=thin-router-example",
+    "test:all": "npm test --workspaces",
+    "lint:all": "npm run lint --workspaces"
   },
   "devDependencies": {
     "@eslint/js": "^9.25.0",
@@ -32,11 +23,6 @@
     "globals": "^16.0.0",
     "typescript": "~5.8.3",
     "typescript-eslint": "^8.30.1",
-    "vite": "^6.3.5",
-    "vite-plugin-dts": "^4.5.4"
-  },
-  "peerDependencies": {
-    "react": ">=16.8.0",
-    "react-dom": ">=16.8.0"
+    "vite": "^6.3.5"
   }
 }
